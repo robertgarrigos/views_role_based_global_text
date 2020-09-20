@@ -1,0 +1,7 @@
+name = Views Role Based Global Text
+description = 'Module provides the option to show the content in Global: Text Area on the role basis.'
+package = Views
+version = 7.x-1.0
+backdrop = 1.x
+type = module
+dependencies[] = views

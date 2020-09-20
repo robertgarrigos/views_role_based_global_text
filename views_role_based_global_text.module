@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Module file for Views Role Based Global Text.
+ */
+
+/**
+ * Implements hook_views_api().
+ */
+function views_role_based_global_text_views_api() {
+  return array(
+    'api' => 3,
+    'path' => backdrop_get_path('module', 'views_role_based_global_text') . '/views',
+  );
+}
+
+/**
+ * Implements hook_autoload_info().
+ */
+function views_role_based_global_text_autoload_info() {
+  return array(
+    'views_role_based_global_text_handler_extender' => 'views/views_role_based_global_text_handler_extender.inc',
+  );
+}
