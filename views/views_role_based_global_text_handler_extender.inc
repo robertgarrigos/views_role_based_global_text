@@ -42,7 +42,10 @@ class views_role_based_global_text_handler_extender extends views_handler_area_t
    */
   function render($empty = FALSE) {
     global $user;
-    $roles_selected = $this->options['roles_fieldset']['roles'];
+    $roles_selected = null;
+    if (isset($this->options['roles_fieldset']['roles'])) {
+     $roles_selected = $this->options['roles_fieldset']['roles'];
+    }
     if (!is_array($roles_selected)) {
       $roles_selected = array();
     }
